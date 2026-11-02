@@ -22,8 +22,14 @@ has not been validated.
 - For deployment: access to App Service Builder Private Preview, an authorized
   Azure subscription, and an existing resource group.
 
-Vite **7.3.6** and TypeScript **5.9.3** are pinned. Keep `package-lock.json` and
+Vite **8.3.5** and TypeScript **7.0.2** are pinned. Keep `package-lock.json` and
 use `npm ci` rather than updating dependencies as part of setup.
+
+Vite 8 uses Rolldown for bundling and targets Edge/Chrome 111, Firefox 114,
+and Safari 16.4 or newer by default. TypeScript 7 uses the native compiler;
+the build still runs `tsc --noEmit`. Both tools include platform-specific
+packages, so keep npm's optional dependencies enabled during installation.
+Node 24 remains the build toolchain; the deployed output is still static files.
 
 ## Run locally
 
