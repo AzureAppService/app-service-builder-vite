@@ -8,6 +8,8 @@ code preview that reflects the configured greeting, documentation links, and
 keyboard-visible focus states. All styling is local; no fonts or images are
 downloaded at runtime. There is no backend, framework dependency, or hosted Vite development server.
 
+![Vite static sample showing the configurable greeting, health-check link, and coral lightning illustration](https://github.com/user-attachments/assets/3b678978-40ae-4f12-8e08-d835bb21728c)
+
 **App Service Builder is in Private Preview for development and testing.** Access
 to an enabled subscription and supported preview location is required. This
 sample has local build and static HTTP checks; an end-to-end cloud deployment
