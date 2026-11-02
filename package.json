@@ -11,7 +11,7 @@
     "preview": "vite preview --host 0.0.0.0 --port 8080 --strictPort"
   },
   "devDependencies": {
-    "typescript": "5.9.3",
-    "vite": "7.3.7"
+    "typescript": "7.0.2",
+    "vite": "8.3.5"
   }
 }
