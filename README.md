@@ -25,7 +25,8 @@ use `npm ci` rather than updating dependencies as part of setup.
 
 ## Run locally
 
-Fork this repository, then clone your fork:
+Fork [AzureAppService/app-service-builder-vite](https://github.com/AzureAppService/app-service-builder-vite),
+then clone your fork:
 
 ```sh
 git clone https://github.com/<your-github-account>/app-service-builder-vite.git
