@@ -1,7 +1,7 @@
 # App Service Builder: Vite TypeScript sample
 
 A small TypeScript frontend built with Vite and deployed as static files with
-[App Service Builder](https://builderapps.azure.com/docs/). The page displays
+[App Service Builder](https://builder.appservice.azure.com/docs/). The page displays
 `App Service Builder / vite-static`, a configurable greeting, and a health-check
 link. Its responsive coral-and-white showcase includes a decorative TypeScript
 code preview that reflects the configured greeting, documentation links, and
@@ -97,7 +97,7 @@ Do not commit `dist/`, `node_modules/`, or secrets.
 
 ## Deploy your fork through the Portal
 
-Follow the [Portal quickstart](https://builderapps.azure.com/docs/quickstarts/portal/)
+Follow the [Portal quickstart](https://builder.appservice.azure.com/docs/quickstarts/portal/)
 for the current Private Preview experience.
 
 1. Push the sample to **`main` in your fork**. Local, uncommitted changes are not
@@ -134,7 +134,7 @@ only** stores the desired value without rebuilding the current version.
 **Save and deploy** builds a new version with that value. After Save only,
 explicitly deploy to apply the change. A retained version keeps its original
 assets and greeting. See the
-[variables guide](https://builderapps.azure.com/docs/guides/variables/).
+[variables guide](https://builder.appservice.azure.com/docs/guides/variables/).
 
 ## Cleanup
 
@@ -144,10 +144,10 @@ resources. App deletion does not delete your local clone or repository.
 
 ## Documentation and contributions
 
-- [App Service Builder documentation](https://builderapps.azure.com/docs/)
-- [Samples](https://builderapps.azure.com/docs/samples/)
-- [Manifest guide](https://builderapps.azure.com/docs/guides/builder-yaml/)
-- [Runtime requirements](https://builderapps.azure.com/docs/reference/runtimes/)
+- [App Service Builder documentation](https://builder.appservice.azure.com/docs/)
+- [Samples](https://builder.appservice.azure.com/docs/samples/)
+- [Manifest guide](https://builder.appservice.azure.com/docs/guides/builder-yaml/)
+- [Runtime requirements](https://builder.appservice.azure.com/docs/reference/runtimes/)
 - [Contributing](CONTRIBUTING.md) and [Microsoft Open Source Code of Conduct](.github/CODE_OF_CONDUCT.md)
 - [Changelog](CHANGELOG.md) and [MIT license](LICENSE.md)
 

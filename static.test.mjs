@@ -5,6 +5,12 @@ import test from 'node:test';
 import { fileURLToPath } from 'node:url';
 import { stripVTControlCharacters } from 'node:util';
 
+test('README documentation links use the canonical docs host', async () => {
+  const readme = await readFile(new URL('./README.md', import.meta.url), 'utf8');
+  assert.match(readme, /https:\/\/builder\.appservice\.azure\.com\/docs\//);
+  assert.doesNotMatch(readme, /https:\/\/builderapps\.azure\.com\/docs(?:\/|\b)/);
+});
+
 test('single static component uses the default repository root path', async () => {
   assert.equal(await readFile(new URL('./builder.yaml', import.meta.url), 'utf8'), `components:
   - name: site
@@ -60,6 +66,8 @@ test('built static site serves its root, assets, and health check', { timeout: 1
   assert.match(html, /<h1>App Service Builder \/ vite-static<\/h1>/);
   assert.match(html, /<p id="greeting" aria-live="polite"><\/p>/);
   assert.match(html, /href="\/health"/);
+  assert.match(html, /href="https:\/\/builder\.appservice\.azure\.com\/docs\/"/);
+  assert.doesNotMatch(html, /https:\/\/builderapps\.azure\.com\/docs/);
   assert.match(html, /href="#main"/);
   assert.doesNotMatch(html, /\/src\/|node_modules/);
 
