@@ -161,3 +161,5 @@ resources. App deletion does not delete your local clone or repository.
 For security concerns, follow the
 [Microsoft Security Response Center reporting guidance](https://www.microsoft.com/msrc/how-to-report-a-vulnerability);
 do not publish sensitive details in a public issue.
+
+The product mark uses the supplied App Service Builder asset in `assets/AppServiceBuilder.svg`. Its SVG is inlined in the root page to preserve the existing routes and security policy. Keep the inline copy and asset in sync when updating the logo.

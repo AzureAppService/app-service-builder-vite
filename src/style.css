@@ -20,7 +20,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .site-header, main, footer { width: min(1240px, calc(100% - 112px)); margin-inline: auto; }
 .site-header { min-height: 112px; display: flex; align-items: center; justify-content: space-between; gap: 24px; border-bottom: 1px solid var(--rule); }
 .brand { display: inline-flex; align-items: center; gap: 11px; font-size: 17px; font-weight: 700; text-decoration: none; letter-spacing: -.025em; }
-.brand svg { color: #e55039; flex: none; }
+.brand-logo { width: 32px; height: 32px; flex: none; }
 .sample-name { color: var(--muted); font-size: 13px; }
 .skip-link { position: absolute; top: 12px; left: 16px; padding: 12px; background: white; z-index: 4; transform: translateY(-160%); }
 .skip-link:focus { transform: translateY(0); }
