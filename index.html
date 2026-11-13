@@ -3,15 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#fcfaf8">
+    <meta name="theme-color" content="#eff3fc">
     <meta name="description" content="A small Vite and TypeScript frontend. Built as static files for App Service Builder.">
+    <link rel="icon" href="data:,">
     <title>App Service Builder / vite-static</title>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
-      <a class="brand" href="/" aria-label="App Service Builder home">
-        <svg class="brand-logo" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div class="surface">
+      <header class="site-header">
+        <a class="brand" href="/" aria-label="App Service Builder home"><svg class="brand-logo" role="img" aria-label="App Service Builder" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_4575_347)">
 <path d="M17.62 8.22L7.62 0.22C7.45 0.08 7.24 0 7 0C6.45 0 6 0.45 6 1C6 1.19 6.05 1.36 6.14 1.51L10.58 9L6.14 16.49C6.05 16.64 6 16.81 6 17C6 17.55 6.45 18 7 18C7.24 18 7.45 17.92 7.62 17.78L12.14 14.17L13.16 13.35L17.62 9.78C17.85 9.6 18 9.32 18 9C18 8.68 17.85 8.4 17.62 8.22Z" fill="url(#paint0_linear_4575_347)"/>
 <path d="M17.62 8.22L7.62 0.22C7.45 0.08 7.24 0 7 0C6.45 0 6 0.45 6 1C6 1.19 6.05 1.36 6.14 1.51L10.58 9L6.14 16.49C6.05 16.64 6 16.81 6 17C6 17.55 6.45 18 7 18C7.24 18 7.45 17.92 7.62 17.78L12.14 14.17L13.16 13.35L17.62 9.78C17.85 9.6 18 9.32 18 9C18 8.68 17.85 8.4 17.62 8.22Z" fill="url(#paint1_radial_4575_347)" fill-opacity="0.5"/>
@@ -60,48 +61,156 @@
 <rect width="18" height="18" fill="white"/>
 </clipPath>
 </defs>
-</svg>
-        <span>App Service Builder</span>
-      </a>
-      <span class="sample-name">Vite + TypeScript</span>
-    </header>
-    <main id="main">
-      <section class="hero" aria-label="Vite static sample">
-        <div class="hero-copy">
+</svg><span>App Service Builder</span></a>
+        <nav aria-label="Documentation">
+          <a href="https://vite.dev/guide/">Vite documentation ↗</a>
+          <a href="https://www.typescriptlang.org/docs/">TypeScript documentation ↗</a>
+          <a href="https://builder.appservice.azure.com/docs/">Builder documentation ↗</a>
+        </nav>
+      </header>
+      <main id="main">
+        <section class="hero" aria-label="Vite static sample">
+          <div class="ecosystems"><div class="vite-mark"><svg class="ecosystem-logo" role="img" aria-label="Vite" viewBox="0 0 23 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M20.7482 0H18.8887C21.641 3.93959 21.6571 10.0462 18.8887 14H20.7482C23.516 10.0462 23.4999 3.93959 20.7482 0Z" fill="white"/>
+  <path d="M2.07027 3.05176e-05C-0.682028 3.93963 -0.698142 10.0463 2.07027 14H3.92985C1.16208 10.0463 1.1782 3.93963 3.92985 3.05176e-05H2.07027Z" fill="white"/>
+  <path d="M12.0135 13.6771C11.815 13.9297 11.4089 13.7892 11.4089 13.4682V10.3853C11.4089 10.0114 11.106 9.70846 10.7321 9.70846H7.32818C7.05295 9.70846 6.89245 9.39713 7.05295 9.17347L9.29089 6.04023C9.61124 5.59225 9.29089 4.9696 8.73979 4.9696H4.62036C4.34513 4.9696 4.18463 4.65828 4.34512 4.43461L7.24632 0.372548C7.31013 0.283598 7.41262 0.230743 7.52155 0.230743H16.1671C16.4424 0.230743 16.6029 0.542069 16.4424 0.765734L14.2044 3.89897C13.8841 4.34695 14.2044 4.9696 14.7555 4.9696H18.1595C18.4418 4.9696 18.6004 5.29511 18.4257 5.51748L12.0142 13.6777L12.0135 13.6771Z" fill="#863BFF"/>
+  <mask id="mask0_127_17274" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="0" width="15" height="14">
+    <path d="M11.9823 13.677C11.7838 13.9296 11.3777 13.7891 11.3777 13.4681V10.3852C11.3777 10.0113 11.0747 9.70837 10.7009 9.70837H7.29693C7.0217 9.70837 6.8612 9.39704 7.0217 9.17338L9.25964 6.04014C9.57999 5.59216 9.25964 4.96951 8.70854 4.96951H4.58911C4.31388 4.96951 4.15338 4.65818 4.31387 4.43452L7.21507 0.372457C7.27888 0.283506 7.38137 0.230652 7.4903 0.230652H16.1359C16.4111 0.230652 16.5716 0.541978 16.4111 0.765643L14.1732 3.89888C13.8528 4.34686 14.1732 4.96951 14.7243 4.96951H18.1282C18.4106 4.96951 18.5691 5.29502 18.3944 5.51739L11.9829 13.6776L11.9823 13.677Z" fill="black"/>
+  </mask>
+  <g mask="url(#mask0_127_17274)">
+    <g filter="url(#filter0_f_127_17274)">
+      <ellipse cx="1.6481" cy="4.39979" rx="1.6481" ry="4.39979" transform="matrix(0.00324134 0.999995 0.999995 -0.00324134 2.91309 9.66077)" fill="#EDE6FF"/>
+    </g>
+    <g filter="url(#filter1_f_127_17274)">
+      <ellipse cx="3.11172" cy="8.9321" rx="3.11172" ry="8.9321" transform="matrix(0.00324134 0.999995 0.999995 -0.00324134 -7.51758 2.58936)" fill="#EDE6FF"/>
+    </g>
+    <g filter="url(#filter2_f_127_17274)">
+      <ellipse cx="1.6481" cy="9.12221" rx="1.6481" ry="9.12221" transform="matrix(0.00324134 0.999995 0.999995 -0.00324134 -7.8584 3.61816)" fill="#7E14FF"/>
+    </g>
+    <g filter="url(#filter3_f_127_17274)">
+      <ellipse cx="1.6481" cy="9.15566" rx="1.6481" ry="9.15566" transform="matrix(0.00324134 0.999995 0.999995 -0.00324134 -6.4834 9.00391)" fill="#7E14FF"/>
+    </g>
+    <g filter="url(#filter4_f_127_17274)">
+      <ellipse cx="1.6481" cy="9.15566" rx="1.6481" ry="9.15566" transform="matrix(0.00324134 0.999995 0.999995 -0.00324134 -6.02441 9.34766)" fill="#7E14FF"/>
+    </g>
+    <g filter="url(#filter5_f_127_17274)">
+      <ellipse cx="4.21045" cy="6.60625" rx="4.21045" ry="6.60625" transform="matrix(0.0584509 -0.99829 -0.99829 -0.0584509 26.4971 8.26871)" fill="#EDE6FF"/>
+    </g>
+    <g filter="url(#filter6_f_127_17274)">
+      <ellipse cx="1.03839" cy="6.43346" rx="1.03839" ry="6.43346" transform="matrix(-0.0172986 -0.99985 -0.99985 0.0172986 26.9297 5.63535)" fill="#7E14FF"/>
+    </g>
+    <g filter="url(#filter7_f_127_17274)">
+      <ellipse cx="1.03839" cy="6.43346" rx="1.03839" ry="6.43346" transform="matrix(-0.0172986 -0.99985 -0.99985 0.0172986 26.9297 5.63535)" fill="#7E14FF"/>
+    </g>
+    <g filter="url(#filter8_f_127_17274)">
+      <ellipse cx="4.36576" cy="2.91514" rx="1.31855" ry="8.70955" transform="rotate(39.5103 4.36576 2.91514)" fill="#7E14FF"/>
+    </g>
+    <g filter="url(#filter9_f_127_17274)">
+      <ellipse cx="18.4697" cy="-1.59207" rx="1.31855" ry="8.70955" transform="rotate(37.8923 18.4697 -1.59207)" fill="#7E14FF"/>
+    </g>
+    <g filter="url(#filter10_f_127_17274)">
+      <ellipse cx="16.6417" cy="2.12577" rx="1.78679" ry="2.89199" transform="rotate(37.8923 16.6417 2.12577)" fill="#47BFFF"/>
+    </g>
+    <g filter="url(#filter11_f_127_17274)">
+      <ellipse cx="3.68841" cy="11.7003" rx="1.31855" ry="8.70955" transform="rotate(37.8923 3.68841 11.7003)" fill="#7E14FF"/>
+    </g>
+    <g filter="url(#filter12_f_127_17274)">
+      <ellipse cx="3.68841" cy="11.7003" rx="1.31855" ry="8.70955" transform="rotate(37.8923 3.68841 11.7003)" fill="#7E14FF"/>
+    </g>
+    <g filter="url(#filter13_f_127_17274)">
+      <ellipse cx="14.9179" cy="9.17936" rx="1.31855" ry="8.70955" transform="rotate(37.8923 14.9179 9.17936)" fill="#7E14FF"/>
+    </g>
+    <g filter="url(#filter14_f_127_17274)">
+      <ellipse cx="15.7453" cy="9.92533" rx="1.78679" ry="4.57726" transform="rotate(37.8923 15.7453 9.92533)" fill="#47BFFF"/>
+    </g>
+  </g>
+  <defs>
+    <filter id="filter0_f_127_17274" x="-1.66562" y="5.06287" width="17.967" height="12.4635" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="2.29179" result="effect1_foregroundBlur_127_17274"/>
+    </filter>
+    <filter id="filter1_f_127_17274" x="-12.0914" y="-2.02332" width="27.0314" height="15.3908" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="2.29179" result="effect1_foregroundBlur_127_17274"/>
+    </filter>
+    <filter id="filter2_f_127_17274" x="-10.6037" y="0.838165" width="23.7454" height="8.79703" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="1.37508" result="effect1_foregroundBlur_127_17274"/>
+    </filter>
+    <filter id="filter3_f_127_17274" x="-9.22867" y="6.22382" width="23.8118" height="8.79703" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="1.37508" result="effect1_foregroundBlur_127_17274"/>
+    </filter>
+    <filter id="filter4_f_127_17274" x="-8.76968" y="6.56757" width="23.8118" height="8.79703" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="1.37508" result="effect1_foregroundBlur_127_17274"/>
+    </filter>
+    <filter id="filter5_f_127_17274" x="8.96524" y="-5.12549" width="22.3664" height="17.6096" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="2.29179" result="effect1_foregroundBlur_127_17274"/>
+    </filter>
+    <filter id="filter6_f_127_17274" x="11.2967" y="0.91397" width="18.3655" height="7.58884" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="1.37508" result="effect1_foregroundBlur_127_17274"/>
+    </filter>
+    <filter id="filter7_f_127_17274" x="11.2967" y="0.91397" width="18.3655" height="7.58884" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="1.37508" result="effect1_foregroundBlur_127_17274"/>
+    </filter>
+    <filter id="filter8_f_127_17274" x="-4.01871" y="-6.60739" width="16.7698" height="19.045" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="1.37508" result="effect1_foregroundBlur_127_17274"/>
+    </filter>
+    <filter id="filter9_f_127_17274" x="10.2694" y="-11.2637" width="16.4007" height="19.3433" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="1.37508" result="effect1_foregroundBlur_127_17274"/>
+    </filter>
+    <filter id="filter10_f_127_17274" x="11.6239" y="-3.15738" width="10.0355" height="10.5663" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="1.37508" result="effect1_foregroundBlur_127_17274"/>
+    </filter>
+    <filter id="filter11_f_127_17274" x="-4.51187" y="2.02869" width="16.4007" height="19.3433" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="1.37508" result="effect1_foregroundBlur_127_17274"/>
+    </filter>
+    <filter id="filter12_f_127_17274" x="-4.51187" y="2.02869" width="16.4007" height="19.3433" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="1.37508" result="effect1_foregroundBlur_127_17274"/>
+    </filter>
+    <filter id="filter13_f_127_17274" x="6.71762" y="-0.49228" width="16.4007" height="19.3433" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="1.37508" result="effect1_foregroundBlur_127_17274"/>
+    </filter>
+    <filter id="filter14_f_127_17274" x="9.84946" y="3.39893" width="11.7913" height="13.0528" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="1.37508" result="effect1_foregroundBlur_127_17274"/>
+    </filter>
+  </defs>
+</svg></div><svg class="ecosystem-logo" role="img" aria-label="TypeScript" fill="none" height="128" viewBox="0 0 128 128" width="128" xmlns="http://www.w3.org/2000/svg"><rect fill="#3178c6" height="128" rx="6" width="128"/><path clip-rule="evenodd" d="m74.2622 99.468v14.026c2.2724 1.168 4.9598 2.045 8.0625 2.629 3.1027.585 6.3728.877 9.8105.877 3.3503 0 6.533-.321 9.5478-.964 3.016-.643 5.659-1.702 7.932-3.178 2.272-1.476 4.071-3.404 5.397-5.786 1.325-2.381 1.988-5.325 1.988-8.8313 0-2.5421-.379-4.7701-1.136-6.6841-.758-1.9139-1.85-3.6159-3.278-5.1062-1.427-1.4902-3.139-2.827-5.134-4.0104-1.996-1.1834-4.246-2.3011-6.752-3.353-1.8352-.7597-3.4812-1.4975-4.9378-2.2134-1.4567-.7159-2.6948-1.4464-3.7144-2.1915-1.0197-.7452-1.8063-1.5341-2.3598-2.3669-.5535-.8327-.8303-1.7751-.8303-2.827 0-.9643.2476-1.8336.7429-2.6079s1.1945-1.4391 2.0976-1.9943c.9031-.5551 2.0101-.9861 3.3211-1.2929 1.311-.3069 2.7676-.4603 4.3699-.4603 1.1658 0 2.3958.0877 3.6928.263 1.296.1753 2.6.4456 3.911.8109 1.311.3652 2.585.8254 3.824 1.3806 1.238.5552 2.381 1.198 3.43 1.9285v-13.1051c-2.127-.8182-4.45-1.4245-6.97-1.819s-5.411-.5917-8.6744-.5917c-3.3211 0-6.4674.3579-9.439 1.0738-2.9715.7159-5.5862 1.8336-7.844 3.353-2.2578 1.5195-4.0422 3.4553-5.3531 5.8075-1.311 2.3522-1.9665 5.1646-1.9665 8.4373 0 4.1785 1.2017 7.7433 3.6052 10.6945 2.4035 2.9513 6.0523 5.4496 10.9466 7.495 1.9228.7889 3.7145 1.5633 5.375 2.323 1.6606.7597 3.0954 1.5486 4.3044 2.3668s2.1628 1.7094 2.8618 2.6736c.7.9643 1.049 2.06 1.049 3.2873 0 .9062-.218 1.7462-.655 2.5202s-1.1 1.446-1.9885 2.016c-.8886.57-1.9956 1.016-3.3212 1.337-1.3255.321-2.8768.482-4.6539.482-3.0299 0-6.0305-.533-9.0021-1.6-2.9715-1.066-5.7245-2.666-8.2591-4.799zm-23.5596-34.9136h18.2974v-11.5544h-51v11.5544h18.2079v51.4456h14.4947z" fill="#fff" fill-rule="evenodd"/></svg></div>
           <h1>App Service Builder / vite-static</h1>
           <p id="greeting" aria-live="polite"></p>
           <p class="intro">A little TypeScript. A fresh start.<br>Built with Vite, served as static files.</p>
-          <div class="actions">
-            <button class="button" type="button" data-health-check data-health-path="/health">Check app health</button>
-            <a class="text-link" href="https://builder.appservice.azure.com/docs/">Builder documentation <span aria-hidden="true">↗</span></a>
-          </div>
+          <button class="button" type="button" data-health-check data-health-path="/health">Check app health</button>
           <p id="health-status" role="status" aria-live="polite">Checks this app's static health file, not Azure services.</p>
-        </div>
-        <div class="illustration" aria-hidden="true">
-          <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div>
-          <div class="coral-disc">
-            <svg class="bolt" viewBox="0 0 240 300" fill="none">
-              <path d="m132 15-91 153h75l-11 117 102-170h-79l4-100Z" fill="#fcfaf8" stroke="#242526" stroke-width="5" stroke-linejoin="round"/>
-            </svg>
-          </div>
-          <span class="spark spark-one">+</span>
-          <span class="spark spark-two">+</span>
-          <div class="code-note">
-            <div class="code-caption"><span class="file-dot"></span> main.ts <span>TypeScript</span></div>
-            <pre><code><span class="code-keyword">const</span> greeting =
-  <span class="code-string">'Hello from Vite.'</span>;</code></pre>
-          </div>
-        </div>
-      </section>
-      <section class="build-details" aria-label="About this sample">
-        <div class="details-heading"><span class="asterisk" aria-hidden="true">✳</span> Small by design.</div>
-        <dl>
-          <div><dt>Frontend</dt><dd>Vite + TypeScript</dd></div>
-          <div><dt>Build output</dt><dd>Static files / dist</dd></div>
-          <div><dt>Make it yours</dt><dd><a href="#customize">Customize the greeting</a></dd></div>
-        </dl>
-      </section>
+        </section>
+        <section class="build-details" aria-label="About this sample">
+          <dl><div><dt>Frontend</dt><dd>Vite + TypeScript</dd></div><div><dt>Build output</dt><dd>Static files / dist</dd></div><div><dt>Make it yours</dt><dd><a href="#customize">Customize the greeting</a></dd></div></dl>
+        </section>
       <details id="customize" class="customize">
         <summary>How to change your public greeting</summary>
         <p>In your Builder App, set the build-time variable <code>VITE_SAMPLE_GREETING</code> to your own public text, then save and deploy a new version. Vite embeds it in the static files; a runtime-only change will not update this page. Never put a secret in a <code>VITE_*</code> variable.</p>
@@ -110,8 +219,11 @@
         <span aria-hidden="true"> · </span>
         <a href="https://vite.dev/guide/env-and-mode">Vite environment variables</a>
       </details>
-    </main>
-    <footer><span>A starting point. Not a framework.</span><span>App Service Builder <span class="footer-divider">/</span> Static sample</span></footer>
+        <details class="guide"><summary>Small app. Static files.</summary><p><code>src/main.ts</code> renders your public greeting at <code>/</code>. Vite bundles the page into <code>dist/</code>; <code>/health</code> is a static file containing <code>OK</code>. This page does not edit your source or deployment.</p></details>
+      </main>
+    </div>
+    <footer><span>Vite + TypeScript · Static sample</span><span>Local liveness does not verify deployment readiness.</span></footer>
+    <details class="brand-notices"><summary>Official logos &amp; trademark notices</summary><p><a href="https://github.com/vitejs/vite/blob/main/docs/public/logo.svg">Vite brand source</a> · <a href="https://www.typescriptlang.org/branding/">TypeScript brand source</a>. Logos identify their respective ecosystems; trademarks belong to their owners. The supplied App Service Builder mark identifies the hosting platform, not ecosystem endorsement. Local copies and provenance are in <code>assets/</code>.</p></details>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

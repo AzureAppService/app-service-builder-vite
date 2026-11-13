@@ -3,12 +3,11 @@
 A small TypeScript frontend built with Vite and deployed as static files with
 [App Service Builder](https://builder.appservice.azure.com/docs/). The page displays
 `App Service Builder / vite-static`, a configurable greeting, and an in-page health
-check. Its responsive coral-and-white showcase includes a decorative TypeScript
-code preview that reflects the configured greeting, documentation links, and
-keyboard-visible focus states. All styling is local; no fonts or images are
+check. Its soft blue/lavender page uses official Vite and TypeScript logos,
+separate ecosystem and Builder documentation links, and keyboard-visible focus states. All styling is local; no fonts or images are
 downloaded at runtime. There is no backend, framework dependency, or hosted Vite development server.
 
-![Vite root page with a configurable greeting, in-page health check, coral lightning illustration, and customization help](docs/images/sample.png)
+![Vite and TypeScript root page with official logos, public greeting, inline health check, and customization help](docs/images/sample.png)
 
 Real local rendering in Microsoft Edge, not evidence of an Azure deployment.
 **Check app health** displays the existing static `/health` result without a
@@ -29,7 +28,7 @@ has not been validated.
 - For deployment: access to App Service Builder Private Preview, an authorized
   Azure subscription, and an existing resource group.
 
-Vite **8.3.5** and TypeScript **7.0.2** are pinned. Keep `package-lock.json` and
+Vite **8.3.6** and TypeScript **7.0.2** are pinned. Keep `package-lock.json` and
 use `npm ci` rather than updating dependencies as part of setup.
 
 Vite 8 uses Rolldown for bundling and targets Edge/Chrome 111, Firefox 114,
@@ -163,3 +162,7 @@ For security concerns, follow the
 do not publish sensitive details in a public issue.
 
 The product mark uses the supplied App Service Builder asset in `assets/AppServiceBuilder.svg`. Its SVG is inlined in the root page to preserve the existing routes and security policy. Keep the inline copy and asset in sync when updating the logo.
+
+Official ecosystem logo sources and trademark notices are documented in
+[assets/NOTICE.md](assets/NOTICE.md). Artwork is stored locally and inlined;
+no remote image or font requests are needed to render the root page.
