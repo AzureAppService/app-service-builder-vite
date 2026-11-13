@@ -65,7 +65,11 @@ test('built static site serves its root, assets, and health check', { timeout: 1
   const html = await root.text();
   assert.match(html, /<h1>App Service Builder \/ vite-static<\/h1>/);
   assert.match(html, /<p id="greeting" aria-live="polite"><\/p>/);
-  assert.match(html, /href="\/health"/);
+  assert.match(html, /data-health-path="\/health"/);
+  assert.match(html, /id="health-status" role="status"/);
+  assert.match(html, /href="#customize"/);
+  assert.match(html, /VITE_SAMPLE_GREETING/);
+  assert.doesNotMatch(html, /Set your greeting|Explore the docs|href="\/health"/);
   assert.match(html, /href="https:\/\/builder\.appservice\.azure\.com\/docs\/"/);
   assert.doesNotMatch(html, /https:\/\/builderapps\.azure\.com\/docs/);
   assert.match(html, /href="#main"/);
