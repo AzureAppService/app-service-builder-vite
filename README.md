@@ -28,7 +28,7 @@ has not been validated.
 - For deployment: access to App Service Builder Private Preview, an authorized
   Azure subscription, and an existing resource group.
 
-Vite **8.3.6** and TypeScript **7.0.2** are pinned. Keep `package-lock.json` and
+Vite **8.3.8** and TypeScript **7.0.2** are pinned. Keep `package-lock.json` and
 use `npm ci` rather than updating dependencies as part of setup.
 
 Vite 8 uses Rolldown for bundling and targets Edge/Chrome 111, Firefox 114,
